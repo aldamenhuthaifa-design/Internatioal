@@ -1,7 +1,7 @@
-##my plan## https://aldamenhuthaifa-design.github.io/Internatioal/
+##my plan## https://aldamenhuthaifa-design.github.io/Internatioal/Student_Study_Plan-3.html
 
 
-###××## https://aldamenhuthaifa-design.github.io/Internatioal/Quick_Multiplication-2.html
+###تحدي الضرب×## https://aldamenhuthaifa-design.github.io/Internatioal/Quick_Multiplication-2.html
 
 ##my marks##
 https://aldamenhuthaifa-design.github.io/Internatioal/index-64.html
