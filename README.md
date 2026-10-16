@@ -15,7 +15,7 @@ https://aldamenhuthaifa-design.github.io/Internatioal/
 
 
 ###تحدي الجذور التربعية والتكعيبة ###
-https://aldamenhuthaifa-design.github.io/Internatioal/
+https://aldamenhuthaifa-design.github.io/Internatioal/Roots_Challenge-1.html
 
 
 ###بطاقات جدول الضرب ###
