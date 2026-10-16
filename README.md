@@ -7,7 +7,7 @@
 https://aldamenhuthaifa-design.github.io/Internatioal/index-64.html
 
 ##تحدي تربيع وتكعيب###
-https://aldamenhuthaifa-design.github.io/Internatioal/
+https://aldamenhuthaifa-design.github.io/Internatioal/Powers_Challenge.html
 
 ###بطاقات الاسس والجذور ###
 
