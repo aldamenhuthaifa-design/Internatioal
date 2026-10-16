@@ -1,4 +1,4 @@
-##my plan## https://aldamenhuthaifa-design.github.io/Internatioal/Study_Plan-8.html
+##my plan## https://aldamenhuthaifa-design.github.io/Internatioal/
 
 
 ###××## https://aldamenhuthaifa-design.github.io/Internatioal/Quick_Multiplication-2.html
