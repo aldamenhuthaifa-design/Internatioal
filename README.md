@@ -12,3 +12,5 @@ https://aldamenhuthaifa-design.github.io/Internatioal/Squares_Cubes_Challenge-1.
 ###بطاقات الاسس والجذور ###
 
 https://aldamenhuthaifa-design.github.io/Internatioal/index-151.html
+###تحدي الجذور التربعية والتكعيبة ###
+https://aldamenhuthaifa-design.github.io/Internatioal/
