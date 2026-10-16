@@ -16,4 +16,4 @@ https://aldamenhuthaifa-design.github.io/Internatioal/index-151.html
 https://aldamenhuthaifa-design.github.io/Internatioal/
 
 ###بطاقات جدول الضرب ###
-https://aldamenhuthaifa-design.github.io/Internatioal/
+https://aldamenhuthaifa-design.github.io/Internatioal/index-111.html
