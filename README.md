@@ -13,7 +13,7 @@ https://aldamenhuthaifa-design.github.io/Internatioal/Squares_Cubes_Challenge-1.
 
 https://aldamenhuthaifa-design.github.io/Internatioal/index-151.html
 ###تحدي الجذور التربعية والتكعيبة ###
-https://aldamenhuthaifa-design.github.io/Internatioal/
+https://aldamenhuthaifa-design.github.io/Internatioal/Roots_Challenge.html
 
 ###بطاقات جدول الضرب ###
 https://aldamenhuthaifa-design.github.io/Internatioal/index-111.html
