@@ -7,13 +7,13 @@
 https://aldamenhuthaifa-design.github.io/Internatioal/index-64.html
 
 ##تحدي تربيع وتكعيب###
-https://aldamenhuthaifa-design.github.io/Internatioal/Squares_Cubes_Challenge-1.html
+https://aldamenhuthaifa-design.github.io/Internatioal/
 
 ###بطاقات الاسس والجذور ###
 
-https://aldamenhuthaifa-design.github.io/Internatioal/index-151.html
+https://aldamenhuthaifa-design.github.io/Internatioal/
 ###تحدي الجذور التربعية والتكعيبة ###
-https://aldamenhuthaifa-design.github.io/Internatioal/Roots_Challenge.html
+https://aldamenhuthaifa-design.github.io/Internatioal/
 
 ###بطاقات جدول الضرب ###
-https://aldamenhuthaifa-design.github.io/Internatioal/index-111.html
+https://aldamenhuthaifa-design.github.io/Internatioal/
