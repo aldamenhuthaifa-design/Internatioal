@@ -20,3 +20,5 @@ https://aldamenhuthaifa-design.github.io/Internatioal/Roots_Challenge-1.html
 
 ###بطاقات جدول الضرب ###
 https://aldamenhuthaifa-design.github.io/Internatioal/index-114.html
+###الكتاب###
+https://aldamenhuthaifa-design.github.io/Internatioal/Dalil_Alqudrat.pdf
