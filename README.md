@@ -22,3 +22,6 @@ https://aldamenhuthaifa-design.github.io/Internatioal/Roots_Challenge-1.html
 https://aldamenhuthaifa-design.github.io/Internatioal/index-114.html
 ###الكتاب###
 https://aldamenhuthaifa-design.github.io/Internatioal/Dalil_Alqudrat.pdf
+
+##واجهة دعائية ##
+https://aldamenhuthaifa-design.github.io/Internatioal/index-129.html
