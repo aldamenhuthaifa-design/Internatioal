@@ -25,3 +25,6 @@ https://aldamenhuthaifa-design.github.io/Internatioal/Dalil_Alqudrat.pdf
 
 ##واجهة دعائية ##
 https://aldamenhuthaifa-design.github.io/Internatioal/index-129.html
+
+حفظ جدول الضرب طلاب المدارس
+https://aldamenhuthaifa-design.github.io/Internatioal/index-114-2.html
