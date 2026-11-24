@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بطاقات جدول الضرب | قدرات الرياضيات</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:#142840;font-family:Tahoma,Arial,sans-serif}main{max-width:900px;margin:auto;padding:16px 14px 24px}header{text-align:center;margin-bottom:28px}.badge{color:#846422;font-size:13px;font-weight:bold}h1{font-size:29px;margin:12px 0}p{color:#69717c;line-height:1.8;font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{border:0;padding:0;background:transparent;height:230px;perspective:1200px;cursor:pointer;font:inherit;text-align:center;color:inherit;border-radius:22px;-webkit-tap-highlight-color:transparent}.card:focus-visible{outline:3px solid #ac8030;outline-offset:5px}.inner{display:block;position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .5s}.card.flipped .inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:21px 16px;box-shadow:0 9px 24px #1428400c}.front{background:#172d47;color:white;border:1px solid #2c4159}.back{transform:rotateY(180deg);background:#fff;border:2px solid #d5b46c}.tag{font-size:12px;color:#e4c584}.content{font-size:25px;font-weight:bold;line-height:1.6}.formula{direction:ltr;unicode-bidi:isolate;display:block;font-family:Arial,sans-serif;font-size:30px}.hint{font-size:11px;color:#aebbc9}.back .tag{color:#967329}.back .hint{color:#7c8490}.back .content{color:#172d47}footer{text-align:center;margin-top:25px;color:#777;font-size:12px}@media(max-width:650px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{height:215px}.content{font-size:21px}.formula{font-size:27px}h1{font-size:26px}}@media(max-width:340px){.grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){.inner{transition:none}}
+
+[hidden]{display:none!important}.welcome{max-width:540px;margin:0 auto;text-align:center;background:white;padding:22px 18px;border:1px solid #e2d8c1;border-radius:26px;box-shadow:0 15px 45px #172d470b}.symbol{width:78px;height:78px;display:grid;place-items:center;background:#172d47;color:#e4c584;border-radius:22px;margin:0 auto 25px;font-size:36px}.primary,.secondary{font:inherit;cursor:pointer;border-radius:13px;padding:15px 24px;font-weight:bold}.primary{background:#172d47;color:#f1d598;border:1px solid #172d47}.secondary{background:white;color:#172d47;border:1px solid #d7dce1}.welcome .primary{width:100%;margin-top:18px}.details{display:flex;justify-content:center;gap:14px;margin:16px 0 4px;color:#846422;font-size:13px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 22px;flex-wrap:wrap}.actions{display:flex;gap:12px;justify-content:center;margin-top:26px}math{font-size:30px;direction:ltr}button:focus-visible{outline:3px solid #ac8030;outline-offset:4px}
+.chooser-title{margin:4px 0 12px;font-size:15px;font-weight:bold;color:#172d47}.chooser{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}.chip{font:inherit;cursor:pointer;border-radius:12px;padding:11px 0;font-size:17px;font-weight:bold;background:#f5f3ed;color:#172d47;border:1px solid #e2d8c1;transition:transform .15s,background .2s}.chip:hover{transform:translateY(-2px)}.chip[aria-pressed="true"]{background:#172d47;color:#f1d598;border-color:#c7a45e;box-shadow:0 5px 14px #172d4722}.chip.all{grid-column:1/-1;font-size:15px}@media(max-width:400px){.chooser{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.challenge-btn{font:inherit;cursor:pointer;width:100%;margin-top:12px;padding:15px 24px;border-radius:13px;font-weight:bold;font-size:16px;color:#3d2a05;background:linear-gradient(135deg,#f3d27a,#d9a640);border:1px solid #c08a26;box-shadow:0 6px 16px #d9a64044}.challenge-btn:hover{filter:brightness(1.05)}
+.ch-top{display:flex;justify-content:space-between;align-items:center;font-weight:bold;font-size:16px;margin-bottom:10px}.ch-time{color:#b3261e}.ch-bar{height:10px;background:#e8e2d3;border-radius:9px;overflow:hidden;margin-bottom:22px}.ch-fill{height:100%;width:100%;background:linear-gradient(90deg,#d9a640,#f3d27a);transition:width 1s linear}.ch-card{background:#172d47;color:#fff;border-radius:22px;padding:34px 16px;text-align:center;margin-bottom:18px}.ch-q{direction:ltr;unicode-bidi:isolate;font-family:Arial,sans-serif;font-size:44px;font-weight:bold}.ch-opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.opt{font:inherit;font-family:Arial,sans-serif;cursor:pointer;font-size:28px;font-weight:bold;padding:18px 0;border-radius:16px;background:#fff;color:#172d47;border:2px solid #e2d8c1}.opt.ok{background:#2e8b57;color:#fff;border-color:#2e8b57}.opt.no{background:#c0392b;color:#fff;border-color:#c0392b}.ch-result{text-align:center;background:#fff;border:1px solid #e2d8c1;border-radius:22px;padding:28px 18px}.ch-score{font-size:56px;font-weight:bold;color:#172d47;margin:6px 0}.ch-result .primary,.ch-result .secondary{width:100%;margin-top:10px}
+.community-link{display:block;width:fit-content;max-width:100%;margin:0 auto 14px;padding:11px 21px;background:#172d47;color:#f1d598;border:1px solid #c7a45e;border-radius:14px;text-decoration:none;text-align:center;font-size:15px;font-weight:bold;line-height:1.6;box-shadow:0 5px 15px #172d4710}.community-link:hover{background:#233e5d}.community-link:focus-visible{outline:3px solid #ac8030;outline-offset:4px}
+</style>
+</head><body><main><a class="community-link" href="https://wa.me/qr/6MF6MJSBSOASM1" target="_blank" rel="noopener noreferrer" aria-label="للاستفسار عبر واتساب">للاستفسار عبر واتساب ↗</a>
+<section id="welcome" class="welcome" aria-labelledby="title"><h1 id="title" style="margin:0 0 4px">بطاقات جدول الضرب</h1><div class="chooser-title" id="chooser-label">اختر الجدول الذي تريد التدرّب عليه</div><div class="chooser" id="chooser" role="group" aria-labelledby="chooser-label"><button type="button" class="chip all" data-t="all" aria-pressed="true">كل الجداول (١ – ١١)</button></div><div class="details" id="details"><span>١٠ بطاقات في كل مجموعة</span><span>أسئلة عشوائية من كل الجداول</span></div><button class="primary" id="start">ابدأ: كل الجداول</button><button class="challenge-btn" id="challenge-start">⏱ تحدي الضرب في دقيقة</button></section>
+<section id="study" hidden aria-labelledby="study-title"><header><span class="badge">قدرات الرياضيات</span><h1 id="study-title" tabindex="-1">بطاقات جدول الضرب</h1><p>انقر على البطاقة لإظهار الإجابة</p></header><div class="toolbar"><button class="secondary" id="home">تغيير الجدول</button><span id="progress" role="status">تم كشف ٠ من ١٠ بطاقات</span></div><div class="grid" id="cards"></div><div class="actions"><button class="primary" id="next">مجموعة جديدة · ١٠ بطاقات</button></div></section><section id="challenge" hidden aria-labelledby="ch-title"><h1 id="ch-title" tabindex="-1" style="text-align:center;margin:0 0 14px;font-size:24px">⏱ تحدي الضرب في دقيقة</h1><div id="ch-play"><div class="ch-top"><span id="ch-score-live">✅ ٠</span><span class="ch-time" id="ch-time">٦٠ ث</span></div><div class="ch-bar"><div class="ch-fill" id="ch-fill"></div></div><div class="ch-card"><div class="ch-q" id="ch-q"></div></div><div class="ch-opts" id="ch-opts"></div></div><div id="ch-end" class="ch-result" hidden role="status"><div>انتهى الوقت! إجاباتك الصحيحة</div><div class="ch-score" id="ch-final"></div><div id="ch-detail" style="color:#69717c"></div><div id="ch-best" style="color:#846422;font-weight:bold;margin-top:8px"></div><button class="primary" id="ch-again">أعد التحدي ↻</button><button class="secondary" id="ch-home">العودة للبداية</button></div></section><footer>الرياضيات خطوة بخطوة</footer></main>
+<script>
+const cards=[];
+for(let x=1;x<=11;x++){
+ for(let y=1;y<=11;y++){
+  cards.push({topic:"جدول الضرب",x:x,q:x+" × "+y,a:String(x*y),math:true});
+ }
+}
+const grid=document.getElementById("cards");
+let previous=new Set();let selected="all";let total=10;
+const ar=n=>String(n).replace(/\d/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]);
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function chooseBatch(){
+ if(selected!=="all"){return shuffle(cards.filter(c=>c.x===selected));}
+ const batch=shuffle(cards.filter(c=>!previous.has(c))).slice(0,10);previous=new Set(batch);return batch;
+}
+const chooser=document.getElementById("chooser");
+for(let t=1;t<=11;t++){const c=document.createElement("button");c.type="button";c.className="chip";c.dataset.t=String(t);c.setAttribute("aria-pressed","false");c.setAttribute("aria-label","جدول "+ar(t));c.textContent=ar(t);chooser.append(c);}
+chooser.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;
+ chooser.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c===b)));
+ selected=b.dataset.t==="all"?"all":Number(b.dataset.t);previous=new Set();
+ const single=selected!=="all";
+ document.getElementById("start").textContent=single?"ابدأ: جدول "+ar(selected):"ابدأ: كل الجداول";
+ document.getElementById("details").innerHTML=single?"<span>١١ بطاقة</span><span>من "+ar(selected)+" × ١ إلى "+ar(selected)+" × ١١</span>":"<span>١٠ بطاقات في كل مجموعة</span><span>أسئلة عشوائية من كل الجداول</span>";
+};
+function showBatch(){
+ grid.replaceChildren();const seen=new Set();
+ const batch=chooseBatch();total=batch.length;
+ const single=selected!=="all";
+ document.getElementById("study-title").textContent=single?"جدول "+ar(selected):"كل الجداول";
+ document.getElementById("next").textContent=single?"أعد خلط الجدول ↻":"مجموعة جديدة · ١٠ بطاقات";
+ document.getElementById("progress").textContent="تم كشف ٠ من "+ar(total)+" بطاقة";
+ batch.forEach((c,i)=>{
+const b=document.createElement("button");b.type="button";b.className="card";b.setAttribute("aria-pressed","false");b.setAttribute("aria-label",c.topic+": "+c.q+"، انقر لإظهار الإجابة");
+const inner=document.createElement("span");inner.className="inner";
+function face(back){const f=document.createElement("span");f.className="face "+(back?"back":"front");f.setAttribute("aria-hidden",String(back));const tag=document.createElement("span");tag.className="tag";tag.textContent=back?"الإجابة":c.topic+" · "+(i+1);const text=document.createElement("span");text.className="content"+(c.math?" formula":"");text.textContent=back?c.a:c.q;
+if(!back&&c.root){
+ const ns="http://www.w3.org/2000/svg";
+ const digits=String(c.radicand).length;const width=67+digits*19;
+ const svg=document.createElementNS(ns,"svg");svg.setAttribute("viewBox","0 0 "+width+" 65");svg.setAttribute("width",String(width));svg.setAttribute("height","65");svg.setAttribute("aria-hidden","true");svg.style.overflow="visible";
+ const line=document.createElementNS(ns,"path");line.setAttribute("d","M 12 34 L 20 30 L 30 51 L 43 9 L "+(width-5)+" 9");line.setAttribute("fill","none");line.setAttribute("stroke","currentColor");line.setAttribute("stroke-width","2.5");line.setAttribute("stroke-linecap","round");line.setAttribute("stroke-linejoin","round");
+ const number=document.createElementNS(ns,"text");number.setAttribute("x",String((48+width-5)/2));number.setAttribute("y","44");number.setAttribute("text-anchor","middle");number.setAttribute("font-family","Cambria, Georgia, serif");number.setAttribute("font-size","34");number.setAttribute("font-weight","normal");number.setAttribute("fill","currentColor");number.textContent=c.radicand;
+ svg.append(line,number);
+ if(c.root===3){const degree=document.createElementNS(ns,"text");degree.setAttribute("x","25");degree.setAttribute("y","19");degree.setAttribute("font-family","Cambria, Georgia, serif");degree.setAttribute("font-size","19");degree.setAttribute("font-weight","normal");degree.setAttribute("fill","currentColor");degree.textContent="3";svg.append(degree);}
+ text.style.display="flex";text.style.alignItems="center";text.style.justifyContent="center";text.style.gap="9px";
+ text.replaceChildren(svg);
+}const hint=document.createElement("span");hint.className="hint";hint.textContent=back?"انقر للعودة إلى السؤال":"انقر لإظهار الإجابة ↻";f.append(text,hint);return f;}
+const front=face(false),back=face(true);inner.append(front,back);b.append(inner);
+b.onclick=()=>{const flipped=b.classList.toggle("flipped");if(flipped){seen.add(i);document.getElementById("progress").textContent="تم كشف "+ar(seen.size)+" من "+ar(total)+" بطاقة";}b.setAttribute("aria-pressed",String(flipped));front.setAttribute("aria-hidden",String(flipped));back.setAttribute("aria-hidden",String(!flipped));b.setAttribute("aria-label",flipped?"الإجابة: "+c.a+"، انقر للعودة إلى السؤال":c.topic+": "+c.q+"، انقر لإظهار الإجابة");};grid.append(b);
+});
+}
+function start(){document.getElementById("welcome").hidden=true;document.getElementById("study").hidden=false;showBatch();document.getElementById("study-title").focus();window.scrollTo(0,0);}
+document.getElementById("start").onclick=start;
+document.getElementById("next").onclick=()=>{showBatch();document.getElementById("study-title").focus();window.scrollTo(0,0);};
+document.getElementById("home").onclick=()=>{document.getElementById("study").hidden=true;document.getElementById("welcome").hidden=false;document.getElementById("start").focus();window.scrollTo(0,0);};
+
+let chTimer=null,chLeft=60,chRight=0,chTotal=0,chBusy=false;
+function show(id){["welcome","study","challenge"].forEach(x=>document.getElementById(x).hidden=x!==id);window.scrollTo(0,0);}
+function chPool(){return selected==="all"?cards:cards.filter(c=>c.x===selected);}
+function chNext(){
+ const pool=chPool();const c=pool[Math.floor(Math.random()*pool.length)];
+ const [x,y]=c.q.split(" × ").map(Number);const ans=x*y;
+ const opts=new Set([ans]);const cand=shuffle([x*(y+1),x*(y-1),(x+1)*y,(x-1)*y,ans+1,ans-1,ans+2,ans+10,ans-10,(x+1)*(y+1)]);
+ for(const v of cand){if(opts.size>=4)break;if(v>0&&v!==ans)opts.add(v);}
+ document.getElementById("ch-q").textContent=x+" × "+y+" = ?";
+ const box=document.getElementById("ch-opts");box.replaceChildren();
+ shuffle([...opts]).forEach(v=>{const b=document.createElement("button");b.type="button";b.className="opt";b.textContent=String(v);
+  b.onclick=()=>{if(chBusy||chLeft<=0)return;chBusy=true;chTotal++;
+   if(v===ans){chRight++;b.classList.add("ok");}else{b.classList.add("no");box.querySelectorAll(".opt").forEach(o=>{if(Number(o.textContent)===ans)o.classList.add("ok");});}
+   document.getElementById("ch-score-live").textContent="✅ "+ar(chRight);
+   setTimeout(()=>{chBusy=false;if(chLeft>0)chNext();},v===ans?250:700);};
+  box.append(b);});
+}
+function chEnd(){clearInterval(chTimer);document.getElementById("ch-play").hidden=true;document.getElementById("ch-end").hidden=false;
+ document.getElementById("ch-final").textContent=ar(chRight);
+ document.getElementById("ch-detail").textContent="من أصل "+ar(chTotal)+" سؤال"+(selected==="all"?" · كل الجداول":" · جدول "+ar(selected));
+ const key="best-"+selected;let best=0;try{best=Number(localStorage.getItem(key)||0);if(chRight>best){localStorage.setItem(key,String(chRight));}}catch(e){}
+ document.getElementById("ch-best").textContent=chRight>best?"🎉 رقم قياسي جديد!":"أفضل نتيجة لك: "+ar(best);
+ document.getElementById("ch-again").focus();}
+function chStart(){show("challenge");chLeft=60;chRight=0;chTotal=0;chBusy=false;clearInterval(chTimer);
+ document.getElementById("ch-play").hidden=false;document.getElementById("ch-end").hidden=true;
+ document.getElementById("ch-score-live").textContent="✅ ٠";document.getElementById("ch-time").textContent="٦٠ ث";
+ const fill=document.getElementById("ch-fill");fill.style.transition="none";fill.style.width="100%";fill.offsetWidth;fill.style.transition="";
+ chNext();document.getElementById("ch-title").focus();
+ chTimer=setInterval(()=>{chLeft--;document.getElementById("ch-time").textContent=ar(chLeft)+" ث";fill.style.width=(chLeft/60*100)+"%";if(chLeft<=0)chEnd();},1000);}
+document.getElementById("challenge-start").onclick=chStart;
+document.getElementById("ch-again").onclick=chStart;
+document.getElementById("ch-home").onclick=()=>{clearInterval(chTimer);show("welcome");document.getElementById("start").focus();};
+</script></body></html>
